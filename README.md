@@ -1,79 +1,39 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+## My React native template
 
-# Getting Started
+### This is my react native template, it's a simple template with some basic libraries and configurations.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+### I hope you enjoy it!
 
-## Step 1: Start the Metro Server
+### If you want to use it, do following steps:
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
-
-To start Metro, run the following command from the _root_ of your React Native project:
+### 1. Clone this repository
 
 ```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
+git clone [your-repo-url] NewProjectName
 ```
 
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
+### 2. Install dependencies
 
 ```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
+cd NewProjectName && npm install
 ```
 
-### For iOS
+### Do following steps to rename your project:
 
-```bash
-# using npm
-npm run ios
+### 1. Rename your project in package.json
 
-# OR using Yarn
-yarn ios
-```
+### 2. Rename your project in app.json
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+### 4.Rename Native iOS and Android App:
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+This is the trickiest part, as it involves renaming the iOS and Android app identifiers.
+iOS:
+Open the ios folder in Xcode.
+Click on the root of your project tree.
+In the General tab, update the Display Name, Bundle Identifier, and any other relevant fields.
+Rename the ios/YourOldProjectName folder and update the references in Xcode.
+Android:
 
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Update the applicationId in android/app/build.gradle.
+Rename the folders in android/app/src/main/java to match your new applicationId.
+Update the package name in all your Java/Kotlin files.
