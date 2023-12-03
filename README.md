@@ -8,14 +8,15 @@
 
 - [React Navigation](https://reactnavigation.org/)
 - [Redux-toolkit](https://redux-toolkit.js.org/)
+- [redux-persis](https://github.com/rt2zz/redux-persist)
 - [redux-persist](https://github.com/rt2zz/redux-persist)
 - [react-native-mmkv](https://github.com/mrousavy/react-native-mmkv)
 - [tamagui](https://tamagui.dev)
 - [day.js](https://day.js.org/docs/en/installation/installation)
 - [axios](https://axios-http.com/docs/intro)
-- [react-native-gesture-handler]
-- [react-native-reanimated]
-- [expo-modules]
+- [react-native-gesture-handler](https://docs.swmansion.com/react-native-gesture-handler/docs/)
+- [react-native-reanimated](https://docs.swmansion.com/react-native-reanimated/)
+- [expo-modules](https://expo.dev/)
 
 ## If you want to use it, do following steps:
 
