@@ -1,10 +1,22 @@
+import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import 'react-native-gesture-handler';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import {Provider} from 'react-redux';
+
+import {InnerNavigation} from './src/navigation';
+import {persistor, store} from '@store';
+import {PersistGate} from 'redux-persist/integration/react';
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Hello World!</Text>
-    </View>
+    <GestureHandlerRootView style={{flex: 1}}>
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <InnerNavigation />
+        </PersistGate>
+      </Provider>
+    </GestureHandlerRootView>
   );
 };
 

@@ -1,4 +1,9 @@
 {
   "name": "SimpleRNTemplate",
-  "displayName": "SimpleRNTemplate"
+  "displayName": "SimpleRNTemplate",
+  "expo": {
+    "experiments": {
+      "tsconfigPaths": true
+    }
+  }
 }
